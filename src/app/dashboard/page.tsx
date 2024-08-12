@@ -68,7 +68,7 @@ export default function page() {
   }, []);
 
   return (
-    <main className="h-screen  flex flex-col  bg-gradient-to-b from-slate-300 to-slate-700">
+    <main className=" min-h-screen flex flex-col bg-cover  bg-gradient-to-b from-slate-300 to-slate-700">
       <div className="md:flex justify-between m-10">
         <h1 className="font-breul text-5xl mb-4 md:mb-0 md:text-7xl bg-gradient-to-r from-slate-500 to-slate-900 bg-clip-text text-transparent">
           WELCOME
