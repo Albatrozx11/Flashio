@@ -68,8 +68,8 @@ export default function page() {
   }, []);
 
   return (
-    <main className="h-screen flex flex-col m-10">
-      <div className="md:flex justify-between">
+    <main className="h-screen  flex flex-col  bg-gradient-to-b from-slate-300 to-slate-700">
+      <div className="md:flex justify-between m-10">
         <h1 className="font-breul text-5xl mb-4 md:mb-0 md:text-7xl bg-gradient-to-r from-slate-500 to-slate-900 bg-clip-text text-transparent">
           WELCOME
         </h1>
@@ -81,10 +81,10 @@ export default function page() {
           ADD
         </button>
       </div>
-      <h1 className="font-breul text-5xl bg-gradient-to-r from-slate-500 to-slate-900 bg-clip-text text-transparent my-10">
+      <h1 className="font-breul m-10 text-5xl bg-gradient-to-r from-slate-500 to-slate-900 bg-clip-text text-transparent my-10">
         Your Flashcards
       </h1>
-      <div className="flex flex-col md:grid grid-cols-3 gap-4">
+      <div className="flex flex-col md:grid grid-cols-3 gap-4 m-10">
         {flashcards.map((flashcard) => (
           <div className="flex flex-col md:flex-row justify-between bg-flashcard-bg text-black bg-cover  p-5 rounded-lg shadow-lg shadow-black">
             <div key={flashcard.id}>
