@@ -119,8 +119,8 @@ export default function page() {
       </h1>
       <div className="flex flex-col md:grid grid-cols-3 gap-4 m-10">
         {flashcards.map((flashcard) => (
-          <div className="flex flex-col  md:flex-row justify-between bg-flashcard-bg text-black bg-cover  px-10 py-8 mr-5 mb-5 rounded-lg shadow-lg shadow-black">
-            <div key={flashcard.id}>
+          <div className="flex flex-col  md:flex-row justify-between bg-flashcard-bg text-black bg-cover  px-10 py-8 mr-5 mb-5 rounded-lg shadow-lg shadow-black" key={flashcard.id}>
+            <div >
               <h1 className="font-barlow text-2xl">{flashcard.question}</h1>
               <p>{flashcard.answer}</p>
             </div>
@@ -152,7 +152,7 @@ export default function page() {
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-10 rounded-lg">
             <h1 className="font-breul text-3xl">Add Flashcard</h1>
-            <form className="flex flex-col ">
+            <form className="flex flex-col " onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="Question"
@@ -174,7 +174,6 @@ export default function page() {
               <button
                 type="submit"
                 className="bg-green-600 text-white p-2 rounded-lg mb-5"
-                onSubmit={handleSubmit}
               >
                 Add
               </button>
@@ -193,7 +192,7 @@ export default function page() {
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-10 rounded-lg">
             <h1 className="font-breul text-3xl">Edit Flashcard</h1>
-            <form className="flex flex-col ">
+            <form className="flex flex-col " onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="Question"
@@ -215,7 +214,6 @@ export default function page() {
               <button
                 type="submit"
                 className="bg-green-600 text-white p-2 rounded-lg mb-5"
-                onSubmit={handleSubmit}
               >
                 Edit
               </button>
