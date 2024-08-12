@@ -56,6 +56,10 @@ export default function page() {
         prev.map((f) => (f.id === flashcardToEdit.id ? data : f))
       );
       setFlashcardToEdit(null);
+        setFormData({
+            question: "",
+            answer: "",
+        });
       closeEditModal();
     } else {
       const res = await fetch("/api/flashcards", {
