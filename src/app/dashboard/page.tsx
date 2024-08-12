@@ -42,6 +42,7 @@ export default function page() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (flashcardToEdit) {
+        e.preventDefault();
       const res = await fetch(`/api/flashcards/${flashcardToEdit.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -54,10 +55,6 @@ export default function page() {
       setFlashcards((prev) =>
         prev.map((f) => (f.id === flashcardToEdit.id ? data : f))
       );
-      setFormData({
-        question: "",
-        answer: "",
-      });
       setFlashcardToEdit(null);
     } else {
       const res = await fetch("/api/flashcards", {
