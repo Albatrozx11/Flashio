@@ -32,7 +32,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ question, answer }) => {
         onAnimationComplete={() => setIsAnimating(false)}
       >
         <div
-          className="flip-card-front shadow-lg shadow-black  absolute w-full h-full bg-flashcard-bg bg-cover bg-center flex flex-col rounded-3xl"
+          className="flip-card-front shadow-lg shadow-black  absolute w-full h-full bg-flashcard-bg bg-cover flex flex-col rounded-3xl"
           style={{
             backfaceVisibility: "hidden",
           }}

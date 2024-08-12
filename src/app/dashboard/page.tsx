@@ -86,7 +86,7 @@ export default function page() {
       </h1>
       <div className="flex flex-col md:grid grid-cols-3 gap-4 m-10">
         {flashcards.map((flashcard) => (
-          <div className="flex flex-col  md:flex-row justify-between bg-flashcard-bg text-black bg-cover  p-10 mr-5 mb-5 rounded-lg shadow-lg shadow-black">
+          <div className="flex flex-col  md:flex-row justify-between bg-flashcard-bg text-black bg-cover  px-10 py-8 mr-5 mb-5 rounded-lg shadow-lg shadow-black">
             <div key={flashcard.id}>
               <h1 className="font-barlow text-2xl">{flashcard.question}</h1>
               <p>{flashcard.answer}</p>
