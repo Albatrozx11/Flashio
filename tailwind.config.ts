@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {'landing-bg': "url('/images/landing-bg.jpg')", 'flashcard-bg': "url('/images/flashcard-bg.jpg')"},
+      backgroundImage: {'landing-bg': "url('/images/landing-bg.jpg')", 'flashcard-bg': "url('/images/flashcard-bg.png')"},
       fontFamily: {
         breul:['breul'],
         barlow:['barlow'],
